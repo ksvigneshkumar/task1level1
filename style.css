@@ -1,1 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+   
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navbarlinks{
+    display: flex;
+column-gap: 20px;
+}
+.navbarlinks a{
+    text-decoration: none;
+    color: darkblue;
+}
+.navbarlinks a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+.navbarmenu{
+    display: none;
+}
+/*side navbar*/
+.sidenavbar{
+    background-color: darkred;
+    width: 50%;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    height: 100%;
+    position: fixed;
+    transition: 2s;
+    
+    
+}
+.sidenavbarlink {
+    margin-bottom: 30px;
+}
+.sidenavbarlinks a{
+    text-decoration: none;
+    color: white;
+    
+}
+.sidenavbarlinks a:hover{
+    text-decoration: underline;
+}
+/*Header*/
+.header{
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    display: flex;
+}
+.headerbutton{
+    background-color:black ;
+    color: white;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.service{
+    padding: 20px;
+}
+
+.service1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service2 div{
+background-color: antiquewhite;
+border-radius: 10px;
+padding: 10px;
+}
+.newarrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 70px;
+}
+.newarrivalcontainer{
+    position: relative;
+    flex-basis: 20%;
+}
+.newarrival button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 10px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    border: none;
+    border-radius: 10px;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    padding: 15px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: rgb(2, 2, 43);
+    color: white;
+}
+.productsection{
+    margin-top: 20px;
+}
+.productsearch{
+    width: 80%;
+    border: solid black 2px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+
+}
+.productsearch input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+
+}
+
+.productsearch input:focus{
+outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.productsbox{
+    text-align: center;
+    flex-basis: 20%;
+}
+.productbox img{
+border-radius: 10px;
+
+}
+/* contant*/
+
+.sec{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    
+}
+ .sec .secc{
+margin-left: 10px;
+}
+.one input{
+    width: 60%;
+    padding: 15px;
+margin: 30px;
+}
+.seacher{
+    background-color: rgb(28, 28, 74);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.butt{
+    margin-top: 10px;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+}
+body{
+   
+   background-color: gray;
+}
+.productsbox button{
+    margin-top: 10px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+.buttt button{
+    margin-bottom: 30px;
+}
+.newarrivalcontainer:hover img{
+    transform: scale(1.2);
+}
+
+/*Media Query*/
+@media screen and (max-width:700px) {
+    .navbarmenu{
+        display: block;
+    }
+   .navbarlinks{
+    display: none;
+   } 
+   .headerimage{
+    display: none;
+}
+.service1{
+    display: none;
+}
+.service2{
+    flex-direction: column;
+}
+}
 
